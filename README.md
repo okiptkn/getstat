@@ -18,6 +18,9 @@ in order to compile `getstat` you need the following dependencies :
 - mail counter
 - date and time
 
+## Preview
+![getstatpreview](img/prev1.png)
+
 ## Installation
 - edit `config.h` to suits your setup and run (as root if necessary) :
 ```
