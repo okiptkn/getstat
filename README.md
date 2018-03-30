@@ -7,7 +7,7 @@ in order to compile `getstat` you need the following dependencies :
 - Xlib header files  
 - `libmpdclient`
 
-### extras
+### * extras
 - dwm with statuscolors patch
 - offline mail client (ex : `offlineimap` `mutt/neomutt`)
 - powerline font
@@ -24,14 +24,13 @@ make
 make clean install     
 ```
 
-- or you can just copy the generated getstat binary to your $PATH
+- or you can just copy/move the generated getstat binary to your `$PATH`
 ```
 make
-mv getstat /your/PATH/directory
+mv getstat /your/PATH/directory/getstat
 ```
 
-- testing :
-run
+- testing run :
 ```
 make
 ./getstat
