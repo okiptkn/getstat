@@ -16,6 +16,7 @@ in order to compile `getstat` you need the following dependencies :
 - mpd status (Playing, Paused, Stopped, and Unavailable)
 - wifi essid
 - mail counter
+- date and time
 
 ## Installations
 - edit `config.h` to suits your setup and run (as root if necessary) :
