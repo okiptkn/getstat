@@ -121,7 +121,7 @@ get_mpd() {
         return retstr;
 }
 
-/* mailbox counter, set your mail_PATH at getstat.h */
+/* mailbox counter, set your mail_PATH at config.h */
 char *
 get_mail(char *directory, char *label)
 {
