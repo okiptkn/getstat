@@ -1,23 +1,23 @@
-PROG      = getstat
+OBJ       = getstat
 CONF      = config
-CC        = gcc
 PREFIX   ?= /usr/local
 SUBPREFIX = ${PREFIX}/bin
+CC        = gcc
 
 LIBS      = -lX11 -lmpdclient
 CFLAGS   += -std=c99 -pedantic -Wall -Wextra
 
-${PROG}: ${PROG}.c ${CONF}.h
-	@${CC} ${CFLAGS} ${LIBS} -o ${PROG} ${PROG}.c
-	@strip ${PROG}
+${OBJ}: ${OBJ}.c ${CONF}.h
+	@${CC} ${CFLAGS} ${LIBS} -o ${OBJ} ${OBJ}.c
+	@strip ${OBJ}
 
 install:
-	install -Dm755 ${PROG} ${DESTDIR}${SUBPREFIX}/${PROG}
+	install -Dm755 ${OBJ} ${DESTDIR}${SUBPREFIX}/${OBJ}
 
 uninstall:
-	rm -f ${SUBPREFIX}/${PROG}
+	rm -f ${SUBPREFIX}/${OBJ}
 
 clean:
-	rm -f ${PROG}
+	rm -f ${OBJ}
 
 .PHONY: all clean install uninstall
