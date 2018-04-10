@@ -22,13 +22,13 @@
 #define mail_PATH       "/home/okiptkn/.mail/rmail/INBOX/new" // offline mail directory
 
 // requires statuscolors patch, or just removes "\xnn" if your dwm isn't patched yet
-#define mpd_PLAYING     "\x01/playing : \x05%s - %s"
-#define mpd_PAUSED      "\x01/paused : \x05%s - %s"
-#define mpd_STOPPED     "\x01/%s"
-#define mpd_UNAV        "\x01/mpd service is unavailable"
-#define wifi_ON         "\x01/essid : \x05%s"
-#define wifi_OFF        "\x01/disconnected"
-#define mail_BOX        "\x01/mail : \x05"
-#define date_CLK        "\x01/%a, \x05%d \x01 %B \x06\uE0B2\x02 %R %Z "
-#define clock_UNAV      "\x01/unable get date info"
+#define mpd_PLAYING     "\x01.playing\x05%s-%s"
+#define mpd_PAUSED      "\x01.paused\x05%s-%s"
+#define mpd_STOPPED     "\x01.mpd\06stopped"
+#define mpd_UNAV        "\x01.mpd\x06service\x06unavailable"
+#define wifi_ON         "\x01.essid\x05%s"
+#define wifi_OFF        "\x01.wifi\x06""disconnected"
+#define mail_BOX        "\x01.mail\x05"
+#define date_CLK        "\x01.%a\x05%d\x01%B  \x02 %R %Z "
+#define clock_UNAV      "\x01.\x06unable\x01toget\x06""dateinfo"
 

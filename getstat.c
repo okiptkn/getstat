@@ -110,7 +110,7 @@ get_mpd() {
 			retstr = smprintf(mpd_PAUSED, artist, title);
 			break;
 		default:
-			retstr = smprintf(mpd_STOPPED, "mpd is stopped");
+			retstr = smprintf(mpd_STOPPED, "%s");
 			break;
    
             free((char*)title);
@@ -160,6 +160,7 @@ get_time(void) {
 	time(&current);
 	if(!strftime(clock, sizeof(clock) - 1, date_CLK, localtime(&current)))
 		return clock_UNAV;
+    else
 	return smprintf(clock);
 }
 
