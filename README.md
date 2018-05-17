@@ -23,7 +23,7 @@ in order to compile `getstat` you need the following dependencies :
 ![getstatpreview](img/prev2.png)
 
 ## Installation
-- edit `config.h` to suit your local setup and run (as root if necessary) :
+- edit `getstat.h` to suit your local setup and run (as root if necessary), this will install `getstat` into your `/usr/local` namespace by default
 ```
 make
 make clean install     

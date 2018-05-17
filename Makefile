@@ -1,5 +1,4 @@
 OBJ       = getstat
-CONF      = config
 PREFIX   ?= /usr/local
 SUBPREFIX = ${PREFIX}/bin
 CC        = gcc
@@ -7,7 +6,7 @@ CC        = gcc
 LIBS      = -lX11 -lmpdclient
 CFLAGS   += -std=c99 -pedantic -Wall -Wextra
 
-${OBJ}: ${OBJ}.c ${CONF}.h
+${OBJ}: ${OBJ}.c ${OBJ}.h
 	@${CC} ${CFLAGS} ${LIBS} -o ${OBJ} ${OBJ}.c
 	@strip ${OBJ}
 

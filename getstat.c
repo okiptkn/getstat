@@ -29,7 +29,7 @@
 #include <unistd.h>
 #include <X11/Xlib.h>
 
-#include "config.h"
+#include "getstat.h"
 
 char *
 smprintf(char *fmt, ...) {
@@ -121,7 +121,7 @@ get_mpd() {
         return retstr;
 }
 
-/* mailbox counter, set your mail_PATH at config.h */
+/* mailbox counter, set your mail_PATH at getstat.h */
 char *
 get_mail(char *directory, char *label)
 {
